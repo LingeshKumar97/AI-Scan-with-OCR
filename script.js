@@ -36,7 +36,6 @@ document.getElementById('fileUpload').addEventListener('change', async function(
             document.getElementById('output').innerText = fullText;
 
         } else if (fileType.startsWith('image/')) {
-            // Handle image files
             const reader = new FileReader();
             reader.onload = function(e) {
                 const img = new Image();
